@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-900 bg-slate-50;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes smoke-volumetric {
+  0% { 
+    transform: translate(0, 0) scale(0.1) rotate(0deg); 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: var(--max-opacity, 0.4); 
+  }
+  50% {
+    transform: translate(calc(var(--tx) * 0.5 + var(--wobble)), calc(var(--ty) * 0.5)) scale(calc(var(--ts) * 0.6)) rotate(180deg);
+  }
+  100% { 
+    transform: translate(calc(var(--tx) + var(--wobble)), var(--ty)) scale(var(--ts)) rotate(360deg); 
+    opacity: 0; 
+  }
+}
+
+.smoke-particle-v2 {
+  animation: smoke-volumetric var(--duration) linear infinite;
+  animation-delay: var(--delay);
+  will-change: transform, opacity;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
