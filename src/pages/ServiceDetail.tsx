@@ -33,6 +33,12 @@ export const ServiceDetail: React.FC = () => {
   const isArray = Array.isArray(data.image);
   const imageCount = isArray ? (data.image as string[]).length : 1;
 
+  const getImageUrl = (path: string) => {
+    if (path.startsWith('http')) return path;
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
+
   return (
     <div className="max-w-6xl mx-auto space-y-4 px-4 pb-12">
       {isArray ? (
@@ -40,7 +46,7 @@ export const ServiceDetail: React.FC = () => {
           {(data.image as string[]).map((img, index) => (
             <img 
               key={index}
-              src={img} 
+              src={getImageUrl(img)} 
               alt={`${data.title} ${index + 1}`} 
               className="w-full h-auto max-h-[600px] object-cover rounded-[3rem] shadow-2xl bg-slate-100/30"
               referrerPolicy="no-referrer"
@@ -49,7 +55,7 @@ export const ServiceDetail: React.FC = () => {
         </div>
       ) : (
         <img 
-          src={data.image as string} 
+          src={getImageUrl(data.image as string)} 
           alt={data.title} 
           className="w-full h-auto max-h-[800px] object-contain rounded-[4rem] shadow-2xl bg-slate-100/30"
           referrerPolicy="no-referrer"
