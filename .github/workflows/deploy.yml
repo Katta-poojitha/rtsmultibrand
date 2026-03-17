@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Change this to `master` if your default branch is `master`
+      - master # Changed from main to master
       # In case you have other branches that you want to trigger the deployment on, add them here.
 
 permissions:
