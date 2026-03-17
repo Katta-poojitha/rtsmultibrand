@@ -73,7 +73,7 @@ export const Intro: React.FC = () => {
           >
             <div className="relative">
               <img 
-                src="/car_breakdown.png" 
+                src={`${import.meta.env.BASE_URL}car_breakdown.png`}
                 alt="Broken Car" 
                 className="w-[650px] h-auto grayscale-[0.2] brightness-110 drop-shadow-[0_0_50px_rgba(255,255,255,0.05)] mix-blend-screen"
               />
@@ -153,7 +153,7 @@ export const Intro: React.FC = () => {
             
             <div className="relative bg-white/5 backdrop-blur-3xl p-16 rounded-[6rem] shadow-[0_0_120px_rgba(0,0,0,0.6)] border border-white/10 flex items-center justify-center overflow-hidden w-[800px] h-[800px]">
               <img 
-                src="/logo.jpg" 
+                src={`${import.meta.env.BASE_URL}logo.jpg`}
                 alt="Enter Website" 
                 className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-700"
               />

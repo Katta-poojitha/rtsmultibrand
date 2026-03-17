@@ -23,7 +23,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         className="fixed inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden"
       >
         <img 
-          src="/logo.jpg" 
+          src={`${import.meta.env.BASE_URL}logo.jpg`}
           alt="" 
           className="w-full h-full object-cover grayscale opacity-15 brightness-105"
         />
@@ -33,7 +33,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <header className="flex items-center gap-4 mb-2">
           <div className="bg-white p-1 rounded-xl shadow-md border border-slate-200 flex items-center justify-center overflow-hidden w-14 h-14">
             <img 
-              src="/logo.jpg" 
+              src={`${import.meta.env.BASE_URL}logo.jpg`}
               alt="RTS Logo" 
               className="w-full h-full object-contain scale-110"
             />

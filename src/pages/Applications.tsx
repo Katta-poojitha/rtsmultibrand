@@ -13,7 +13,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/washing.jpg" 
+            src={`${import.meta.env.BASE_URL}washing.jpg`}
             alt="Professional Car Washing" 
             className="w-full h-full object-cover"
           />
@@ -50,7 +50,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row-reverse w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/detailing.jpg" 
+            src={`${import.meta.env.BASE_URL}detailing.jpg`}
             alt="Expert Car Detailing" 
             className="w-full h-full object-cover"
           />
@@ -87,7 +87,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/mechanic.jpg" 
+            src={`${import.meta.env.BASE_URL}mechanic.jpg`}
             alt="Reliable Mechanical Services" 
             className="w-full h-full object-cover"
           />
@@ -124,7 +124,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row-reverse w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/electric.jpg" 
+            src={`${import.meta.env.BASE_URL}electric.jpg`}
             alt="Electrical System Checks" 
             className="w-full h-full object-cover"
           />
@@ -160,7 +160,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/wheel.jpg" 
+            src={`${import.meta.env.BASE_URL}wheel.jpg`}
             alt="Professional Tyre & Wheel Services" 
             className="w-full h-full object-cover"
           />
@@ -196,7 +196,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row-reverse w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/carbody.jpg" 
+            src={`${import.meta.env.BASE_URL}carbody.jpg`}
             alt="Expert Body Repair & Painting" 
             className="w-full h-full object-cover"
           />
@@ -233,7 +233,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/ac.jpg" 
+            src={`${import.meta.env.BASE_URL}ac.jpg`}
             alt="AC & Cooling System Services" 
             className="w-full h-full object-cover"
           />
@@ -269,7 +269,7 @@ export const Applications: React.FC = () => {
       <section className="flex flex-col lg:flex-row-reverse w-full border-y border-slate-100 bg-white">
         <div className="w-full lg:w-1/2 h-[450px] overflow-hidden">
           <img 
-            src="/inspection.jpg" 
+            src={`${import.meta.env.BASE_URL}inspection.jpg`}
             alt="Advanced Diagnostics & Inspection" 
             className="w-full h-full object-cover"
           />

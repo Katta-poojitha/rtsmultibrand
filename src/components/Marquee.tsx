@@ -1,13 +1,13 @@
 import React from 'react';
 
 const CAR_IMAGES = [
-  '/car-1.jpeg',
-  '/car-2.jpg',
-  '/car-3.jpg',
-  '/car-4.jpg',
-  '/car-5.jpg',
-  '/car-6.jpg',
-  '/car-7.jpg',
+  `${import.meta.env.BASE_URL}car-1.jpeg`,
+  `${import.meta.env.BASE_URL}car-2.jpg`,
+  `${import.meta.env.BASE_URL}car-3.jpg`,
+  `${import.meta.env.BASE_URL}car-4.jpg`,
+  `${import.meta.env.BASE_URL}car-5.jpg`,
+  `${import.meta.env.BASE_URL}car-6.jpg`,
+  `${import.meta.env.BASE_URL}car-7.jpg`,
 ];
 
 export const Marquee: React.FC = () => {

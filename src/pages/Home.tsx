@@ -25,7 +25,7 @@ export const Home: React.FC = () => {
       >
         <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 group">
           <img 
-            src="/banner.jpg.jpg" 
+            src={`${import.meta.env.BASE_URL}banner.jpg.jpg`}
             alt="RTS Multi Brand Car Care" 
             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-1000"
           />
